@@ -1,0 +1,44 @@
+.org-settings {
+  max-width: 100%;
+}
+
+.org-settings-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0 0 24px 0;
+}
+
+.org-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid #E5E7EB;
+  margin-bottom: 32px;
+}
+
+.org-tab {
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #6B7280;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  cursor: pointer;
+  background: none;
+  margin-bottom: -1px;
+}
+
+.org-tab:hover {
+  color: #374151;
+}
+
+.org-tab.active {
+  color: #7C3AED;
+  border-bottom-color: #7C3AED;
+  font-weight: 500;
+}
+
+.org-tab-content {
+  min-height: 400px;
+}

@@ -1,0 +1,112 @@
+.settings-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.settings-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.settings-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #EDE9FE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7C3AED;
+  flex-shrink: 0;
+}
+
+.settings-card-header-text {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.settings-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0;
+}
+
+.settings-card-subtitle {
+  font-size: 13px;
+  color: #6B7280;
+}
+
+.settings-card-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-card-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+
+.settings-card-item:hover {
+  background: #F9FAFB;
+}
+
+.settings-card-item.clickable {
+  cursor: pointer;
+}
+
+.settings-card-item-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.settings-card-item-label {
+  font-size: 14px;
+  color: #374151;
+}
+
+.settings-card-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.badge-warning {
+  background: #FEF3C7;
+  color: #D97706;
+}
+
+.badge-default {
+  background: #EDE9FE;
+  color: #7C3AED;
+}
+
+.settings-card-item-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.settings-card-item-detail {
+  font-size: 13px;
+  color: #6B7280;
+}
+
+.settings-card-chevron {
+  color: #9CA3AF;
+  flex-shrink: 0;
+}

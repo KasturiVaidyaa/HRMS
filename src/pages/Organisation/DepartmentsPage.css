@@ -1,0 +1,289 @@
+.departments-page {
+  max-width: 100%;
+}
+
+/* Toolbar */
+.departments-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.departments-search {
+  position: relative;
+}
+
+.departments-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9CA3AF;
+  pointer-events: none;
+}
+
+.departments-search input {
+  width: 240px;
+  padding: 10px 16px 10px 40px;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  background: white;
+}
+
+.departments-search input:focus {
+  border-color: #7C3AED;
+}
+
+.btn-new-department {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  background: #7C3AED;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-new-department:hover {
+  background: #6D28D9;
+}
+
+/* Info Banner */
+.departments-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #EFF6FF;
+  border-left: 3px solid #3B82F6;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 24px;
+}
+
+.departments-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.departments-banner-icon {
+  color: #3B82F6;
+  flex-shrink: 0;
+}
+
+.departments-banner-content span {
+  font-size: 14px;
+  color: #1E40AF;
+}
+
+.departments-banner-close {
+  color: #6B7280;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+
+.departments-banner-close:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Table */
+.departments-table-wrapper {
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.departments-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.departments-table thead th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6B7280;
+  font-weight: 500;
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #E5E7EB;
+  background: #FAFAFA;
+}
+
+.departments-table tbody tr {
+  border-bottom: 1px solid #F3F4F6;
+  transition: background-color 0.1s ease;
+}
+
+.departments-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.departments-table tbody tr:hover {
+  background: #F9FAFB;
+}
+
+.departments-table td {
+  padding: 16px;
+  font-size: 14px;
+}
+
+.dept-name {
+  font-weight: 500;
+  color: #1F2937;
+}
+
+.dept-head {
+  color: #374151;
+}
+
+.dept-employees {
+  color: #6B7280;
+}
+
+.dept-date {
+  color: #6B7280;
+}
+
+.dept-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.action-edit {
+  color: #7C3AED;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.action-edit:hover {
+  color: #6D28D9;
+  text-decoration: underline;
+}
+
+.action-delete {
+  color: #EF4444;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.action-delete:hover {
+  color: #DC2626;
+  text-decoration: underline;
+}
+
+/* Pagination */
+.departments-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  margin-top: 8px;
+}
+
+.pagination-info {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pagination-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #374151;
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #F3F4F6;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pagination-page {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #374151;
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pagination-page:hover {
+  background: #F3F4F6;
+}
+
+.pagination-page.active {
+  background: #7C3AED;
+  color: white;
+  border-color: #7C3AED;
+}
+
+/* Empty State */
+.departments-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.empty-icon {
+  color: #D1D5DB;
+  margin-bottom: 16px;
+}
+
+.empty-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 8px 0;
+}
+
+.empty-description {
+  font-size: 14px;
+  color: #6B7280;
+  margin: 0;
+  max-width: 400px;
+}
